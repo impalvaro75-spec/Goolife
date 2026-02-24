@@ -1,0 +1,95 @@
+# Goolife<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goolife</title>
+    <style>
+        /* CSS - Lo stile "Clone" di Google */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header in alto a destra */
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 20px;
+            gap: 15px;
+            font-size: 13px;
+        }
+        header a { text-decoration: none; color: #000; padding-top: 5px; }
+        header a:hover { text-decoration: underline; }
+        .btn-blue {
+            background-color: #1a73e8;
+            color: white !important;
+            padding: 9px 23px !important;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* Sezione centrale */
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: -50px; /* Alza leggermente il logo */
+        }
+
+        /* Logo Goolife con colori Google */
+        .logo {
+            font-size: 90px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            user-select: none;
+        }
+        .g1 { color: #4285F4; } .o1 { color: #EA4335; } .o2 { color: #FBBC05; }
+        .l { color: #4285F4; } .i { color: #34A853; } .f { color: #EA4335; } .e { color: #FBBC05; }
+
+        /* Barra di ricerca */
+        .search-container {
+            width: 90%;
+            max-width: 584px;
+            position: relative;
+        }
+        #search-input {
+            width: 100%;
+            padding: 12px 20px 12px 45px;
+            font-size: 16px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            outline: none;
+            transition: box-shadow 0.2s;
+        }
+        #search-input:hover, #search-input:focus {
+            box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+            border-color: rgba(223,225,229,0);
+        }
+
+        /* Pulsanti */
+        .buttons {
+            margin-top: 25px;
+        }
+        button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 34px;
+            height: 36px;
+            min-width: 54px;
+            cursor: pointer;
+        }
+        button:hover {
+            border: 1px solid
